@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Website.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pathfinder 
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#f0f0c8"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM5 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zm5.8-10l2.4-2.4.8.8c1.3 1.3 3 2.1 5.1 2.1V9c-1.5 0-2.7-.6-3.6-1.5l-1.9-1.9c-.5-.4-1-.6-1.6-.6s-1.1.2-1.4.6L7.8 8.4c-.4.4-.6.9-.6 1.4 0 .6.2 1.1.6 1.4L11 14v5h2v-6.2l-2.2-2.3zM19 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z"/></svg> 
+        Pedals</h1>
+        <div class="menu-icon">&#9776;</div> <!-- Hamburger Icon -->
+        <nav>
+            <ul>
+                <li><a href="Website-abo.html">About Us</a></li>
+                <li><a href="Website-feat.html">Features</a></li>
+                <li><a href="Website.html">Landing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="intro">
+    <h2>Contact us</h2>
+</section>
+
+<section class="contact-form">
+    <form action="/submit-form" method="post">
+        <div class="form-group">
+            <label class="b" for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label class="b" for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label class="b" for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+<section class="gallery">
+    <div class="text-content">
+        <h2>Gallery</h2>
+        <p>Check out some of our latest mountain biking adventures! (verður kns að slideshow)</p>
+    </div>
+    <div class="image-gallery">
+        <img src="img/downhill_riding.jpg" alt="Gallery Image 1">
+        <img src="img/downhill_riding.jpg" alt="Gallery Image 2">
+        <img src="img/downhill_riding.jpg" alt="Gallery Image 3">
+    </div>
+</section>
+
+<footer>
+    <div class="social-media">
+        <i class="fa-brands fa-facebook"></i><a href="#" class="social-link">Facebook</a>
+        <i class="fa-brands fa-twitter"></i><a href="#" class="social-link">Twitter</a>
+        <i class="fa-brands fa-instagram"></i><a href="#" class="social-link">Instagram</a>
+        <i class="fa-brands fa-linkedin"></i><a href="#" class="social-link">LinkedIn</a>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px" fill="#f0f0c8"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM5 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zm5.8-10l2.4-2.4.8.8c1.3 1.3 3 2.1 5.1 2.1V9c-1.5 0-2.7-.6-3.6-1.5l-1.9-1.9c-.5-.4-1-.6-1.6-.6s-1.1.2-1.4.6L7.8 8.4c-.4.4-.6.9-.6 1.4 0 .6.2 1.1.6 1.4L11 14v5h2v-6.2l-2.2-2.3zM19 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z"/></svg> 
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var menuIcon = document.querySelector('.menu-icon');
+        var nav = document.querySelector('nav ul');
+
+        menuIcon.addEventListener('click', function () {
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>
